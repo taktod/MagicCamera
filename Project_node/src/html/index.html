@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html style="width:100%;height:100%">
+  <head>
+    <meta charset="UTF-8" />
+    <title>bsTest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div style="position:absolute;top:1600px;">
+      <img id="amaro_mask1_jpg"             src="../res/amaro_mask1.jpg"></img>
+      <img id="amaro_mask2_jpg"             src="../res/amaro_mask2.jpg"></img>
+      <img id="amaromap_png"                src="../res/amaromap.png"></img>
+      <img id="blackboard1024_png"          src="../res/blackboard1024.png"></img>
+      <img id="bluevintage_mask1_jpg"       src="../res/bluevintage_mask1.jpg"></img>
+      <img id="brannan_blowout_png"         src="../res/brannan_blowout.png"></img>
+      <img id="brannan_contrast_png"        src="../res/brannan_contrast.png"></img>
+      <img id="brannan_luma_png"            src="../res/brannan_luma.png"></img>
+      <img id="brannan_process_png"         src="../res/brannan_process.png"></img>
+      <img id="brannan_screen_png"          src="../res/brannan_screen.png"></img>
+      <img id="brooklynCurves1_png"         src="../res/brooklynCurves1.png"></img>
+      <img id="brooklynCurves2_png"         src="../res/brooklynCurves2.png"></img>
+      <img id="calm_mask1_jpg"              src="../res/calm_mask1.jpg"></img>
+      <img id="calm_mask2_jpg"              src="../res/calm_mask2.jpg"></img>
+      <img id="earlybirdblowout_png"        src="../res/earlybirdblowout.png"></img>
+      <img id="earlybirdcurves_png"         src="../res/earlybirdcurves.png"></img>
+      <img id="earlybirdmap_png"            src="../res/earlybirdmap.png"></img>
+      <img id="earlybirdoverlaymap_new_png" src="../res/earlybirdoverlaymap_new.png"></img>
+      <img id="edgeburn_png"                src="../res/edgeburn.png"></img>
+      <img id="fairy_tale_png"              src="../res/fairy_tale.png"></img>
+      <img id="filter_map_first_png"        src="../res/filter_map_first.png"></img>
+      <img id="freud_rand_png"              src="../res/freud_rand.png"></img>
+      <img id="healthy_mask_1_jpg"          src="../res/healthy_mask_1.jpg"></img>
+      <img id="hefegradientmap_png"         src="../res/hefegradientmap.png"></img>
+      <img id="hefemap_png"                 src="../res/hefemap.png"></img>
+      <img id="hefemetal_png"               src="../res/hefemetal.png"></img>
+      <img id="hefesoftlight_png"           src="../res/hefesoftlight.png"></img>
+      <img id="hudsonbackground_png"        src="../res/hudsonbackground.png"></img>
+      <img id="hudsonmap_png"               src="../res/hudsonmap.png"></img>
+      <img id="inkwellmap_png"              src="../res/inkwellmap.png"></img>
+      <img id="kelvinmap_png"               src="../res/kelvinmap.png"></img>
+      <img id="lomomap_new_png"             src="../res/lomomap_new.png"></img>
+      <img id="n1977blowout_png"            src="../res/n1977blowout.png"></img>
+      <img id="n1977map_png"                src="../res/n1977map.png"></img>
+      <img id="nashvillemap_png"            src="../res/nashvillemap.png"></img>
+      <img id="overlaymap_png"              src="../res/overlaymap.png"></img>
+      <img id="pixar_curves_png"            src="../res/pixar_curves.png"></img>
+      <img id="rise_mask1_jpg"              src="../res/rise_mask1.jpg"></img>
+      <img id="rise_mask2_jpg"              src="../res/rise_mask2.jpg"></img>
+      <img id="risemap_png"                 src="../res/risemap.png"></img>
+      <img id="sierramap_png"               src="../res/sierramap.png"></img>
+      <img id="sierravignette_png"          src="../res/sierravignette.png"></img>
+      <img id="softlight_png"               src="../res/softlight.png"></img>
+      <img id="sutrocurves_png"             src="../res/sutrocurves.png"></img>
+      <img id="sutroedgeburn_png"           src="../res/sutroedgeburn.png"></img>
+      <img id="sutrometal_png"              src="../res/sutrometal.png"></img>
+      <img id="toastercolorshift_png"       src="../res/toastercolorshift.png"></img>
+      <img id="toastercurves_png"           src="../res/toastercurves.png"></img>
+      <img id="toastermetal_png"            src="../res/toastermetal.png"></img>
+      <img id="toasteroverlaymapwarm_png"   src="../res/toasteroverlaymapwarm.png"></img>
+      <img id="toastersoftlight_png"        src="../res/toastersoftlight.png"></img>
+      <img id="toy_mask1_jpg"               src="../res/toy_mask1.jpg"></img>
+      <img id="vignette_map_png"            src="../res/vignette_map.png"></img>
+      <img id="vignettemap_new_png"         src="../res/vignettemap_new.png"></img>
+      <img id="walden_map_png"              src="../res/walden_map.png"></img>
+      <img id="warm_layer1_jpg"             src="../res/warm_layer1.jpg"></img>
+      <img id="xpromap_png"                 src="../res/xpromap.png"></img>
+    </div>
+    <div id="camera"                style="display:none;">camera               <br /><video id="source" style="width:320px;height:240px;"></video></div>
+    <div id="brightness"            style="display:none;">brightness           <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="contrast"              style="display:none;">contrast             <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="exposure"              style="display:none;">exposure             <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="hue"                   style="display:none;">hue                  <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="saturation"            style="display:none;">saturation           <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="sharpen"               style="display:none;">sharpen              <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="amaro"                 style="display:none;">amaro                <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="antique"               style="display:none;">antique              <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="beautify_fragment"     style="display:none;">beautify_fragment    <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="beautify_fragment_low" style="display:none;">beautify_fragment_low<input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="bilateralfilter"       style="display:none;">bilateralfilter      <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="bilateralfilter_low"   style="display:none;">bilateralfilter_low  <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="blackcat"              style="display:none;">blackcat             <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="brannan"               style="display:none;">brannan              <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="brooklyn"              style="display:none;">brooklyn             <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="calm"                  style="display:none;">calm                 <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="cool"                  style="display:none;">cool                 <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="crayon"                style="display:none;">crayon               <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="earlybird"             style="display:none;">earlybird            <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="emerald"               style="display:none;">emerald              <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="evergreen"             style="display:none;">evergreen            <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="fairytale"             style="display:none;">fairytale            <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="freud"                 style="display:none;">freud                <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="healthy"               style="display:none;">healthy              <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="hefe"                  style="display:none;">hefe                 <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="hudson"                style="display:none;">hudson               <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="inkwell"               style="display:none;">inkwell              <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="kevin_new"             style="display:none;">kevin_new            <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="latte"                 style="display:none;">latte                <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="lomo"                  style="display:none;">lomo                 <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="n1977"                 style="display:none;">n1977                <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="nashville"             style="display:none;">nashville            <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="nostalgia"             style="display:none;">nostalgia            <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="pixar"                 style="display:none;">pixar                <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="rise"                  style="display:none;">rise                 <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="romance"               style="display:none;">romance              <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="sakura"                style="display:none;">sakura               <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="sierra"                style="display:none;">sierra               <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="sketch"                style="display:none;">sketch               <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="skinwhiten"            style="display:none;">skinwhiten           <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="suger_tablets"         style="display:none;">suger_tablets        <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="sunrise"               style="display:none;">sunrise              <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="sunset"                style="display:none;">sunset               <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="sutro"                 style="display:none;">sutro                <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="sweets"                style="display:none;">sweets               <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="tender"                style="display:none;">tender               <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="toaster2"              style="display:none;">toaster2             <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="walden"                style="display:none;">walden               <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="warm"                  style="display:none;">warm                 <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="whitecat"              style="display:none;">whitecat             <br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <div id="xproii"                style="display:none;">xproii               <input type="range"></input><br /><canvas style="width:320px;height:240px;"></canvas></div>
+    <script type="text/javascript" src="../../dest/app.js"></script>
+  </body>
+</html>

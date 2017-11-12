@@ -1,0 +1,16 @@
+{
+  "name": "magic_webgl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.3.0",
+    "typescript": "^2.6.1",
+    "webpack": "^3.8.1"
+  }
+}
